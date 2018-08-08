@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>
+    <%= json.project.title %>
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Safari, you're the worst -->
+  <meta name='format-detection' content='telephone=no'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <%= t.include("partials/_head.html") %>
+</head>
+
+<body>
+
+  <responsive-child class="map-container">
+    <div class="outmost">
+      <section class="chatter">
+        <h1>New constructions in Chinatown-International District </h1>
+        <p>Most of the private development projects are mixed-use apartment buildings, which include some units that are affordable to people with incomes at or below 60% of area median income (AMI). Many low-income seniors are unable to afford studios at 60% AMI, which translated to about $1,000 a month. </p>
+        <h4>Locations with an outer, black stroke indicate non-profit housing developers.</h4>
+      </section>
+
+      <div class="aspect-ratio-outer">
+        <div class="aspect-ratio-inner">
+
+          <leaflet-map zoom=10>
+            <tile-layer layer="cartoPositron"></tile-layer>
+          </leaflet-map>
+
+        </div>
+        <aside class="legend">
+          <h1>Application year</h1>
+          <ul class="scale">
+            <li>
+              <span class="block" style="background-color: #67001f"></span> 2012</li>
+            <li>
+              <span class="block" style="background-color: #ff3c6d"></span> 2013</li>
+            <li>
+              <span class="block" style="background-color: #f46d43"></span> 2014</li>
+            <li>
+              <span class="block" style="background-color: #fec018"></span> 2015</li>
+            <li>
+              <span class="block" style="background-color: #053061"></span> 2016</li>
+            <li>
+              <span class="block" style="background-color: #8073ac"></span> 2017</li>
+            <li>
+              <span class="block" style="background-color: #2d004b"></span> 2018</li>
+            </ul>
+        </aside>
+      </div>
+
+ 
+
+
+
+      <div class="source">Source: city of Seattle 
+        <span class="credit">CLARE ORTBLAD / THE SEATTLE TIMES</div>
+    </div>
+  </responsive-child>
+
+  <script src="app.js"></script>
+  <% /*= t.include("partials/_foot.html"); */ %>
+    <%= t.include("partials/_workHere.html") %>
+</body>
+
+</html>
