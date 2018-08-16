@@ -31,7 +31,7 @@ var color = {
 }
 
 var category = {
-  "Non-profit housing developer": "4",
+  "Nonprofit housing developer": "4",
 }
 
 function geojsonMarkerOptions(feature) {

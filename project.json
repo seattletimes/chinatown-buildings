@@ -5,13 +5,14 @@
       "path": "doomed-predestination"
     },
     "live": {
-      "bucket": "",
-      "path": ""
+      "bucket": "projects.seattletimes.com",
+      "path": "2018/local/chinatown-buildings"
     }
   },
   "title": "",
   "description": "",
   "url": "",
   "slug": "",
-  "tags": []
+  "tags": [],
+  "production": true
 }
